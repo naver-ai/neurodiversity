@@ -34,6 +34,16 @@ export interface ResearchProject {
   links?: { label: string; url: string }[];
 }
 
+export interface PressItem {
+  id: string;
+  title: string;
+  type: "article" | "video";
+  year: number;
+  month?: number;
+  url?: string;
+  body: string;
+}
+
 export interface Publication {
   id: string;
   title: string;

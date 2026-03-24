@@ -34,7 +34,7 @@ export default function HomePage() {
                 className="h-12 w-auto"
               />
             </div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
               네이버 AI랩 신경다양성 연구팀
             </h1>
             <p className="mt-4 text-base text-gray-600 leading-relaxed">

@@ -1,0 +1,39 @@
+- id: press-006
+  title: '제12회 널리 웨비나: Designing Inclusive AI for Marginalized Population'
+  type: video
+  year: 2024
+  month: 12
+  url: https://nuli.navercorp.com/seminar/s12th
+  body: 김영호 연구책임자가 제12회 널리 웨비나에서 소외계층을 위한 AI 시스템의 포용적 디자인 사례 및 난제를 소개하였습니다.
+
+- id: press-005
+  title: 말 못하는 아이, AI로 대화하는 법을 알려주고 도와줄 수 있다?! [대한소아청소년정신의학회 2025 춘계학술대회]
+  type: video
+  year: 2025
+  month: 8
+  url: https://www.youtube.com/watch?v=W87K7-an1CY
+  body: 김영호 연구책임자가 2025 춘계학술대회에서 자폐 아동의 AI 기반 소통 연구를 소개하였습니다.
+
+- id: press-002
+  title: KBS N AI토피아
+  type: video
+  year: 2025
+  month: 11
+  url: https://www.youtube.com/watch?v=lLtzosZj2KQ&t=280s
+  body: 김영호 연구책임자가 KBS N AI토피아에 출연하여 포용적 AI 연구들에 대해 소개하였습니다.
+
+- id: press-003
+  title: 과학기술정보통신부 유튜브 채널 '선수다'
+  type: video
+  year: 2025
+  month: 7
+  url: https://www.youtube.com/watch?v=5S6C2nZp6_s&t=57s
+  body: "'\"엄마는요?\" 아이의 질문에 울컥한 사연': 김영호 연구책임자, 이경아 원장, 최다솜 인턴연구원이 과학기술정보통신부 유튜브 채널 '선수다'에 출연하여 AACessTalk 프로젝트의 개발 비화에 대해 이야기하였습니다."
+
+- id: press-004
+  title: '"처음으로 아이와 진짜 대화"…자폐아동용 AI 소통앱 개발'
+  type: article
+  year: 2025
+  month: 5
+  url: https://m.dongascience.com/ko/news/71725
+  body: 동아사이언스. KAIST 홍화정 교수팀과 네이버클라우드 AI랩, 도닥임 아동발달센터가 공동 개발한 자폐 아동용 AI 소통 앱 'AACessTalk'가 소개되었습니다. ACM CHI 2025 최우수 논문상 수상 연구로, 말로 의사표현이 어려운 자폐 아동과 부모의 소통을 돕습니다.

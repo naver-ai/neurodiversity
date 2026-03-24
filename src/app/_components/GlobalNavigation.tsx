@@ -37,6 +37,7 @@ export function GlobalNavigation() {
           <NavLink href="/team">연구진 소개</NavLink>
           <NavLink href="/research">진행중인 연구</NavLink>
           <NavLink href="/publications">논문 성과</NavLink>
+          <NavLink href="/press">보도자료</NavLink>
         </nav>
       </div>
     </header>
