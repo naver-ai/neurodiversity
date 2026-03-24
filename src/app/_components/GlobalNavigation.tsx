@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { NavLink } from "./NavLink";
+import { assetPath } from "../_lib/asset-path";
 
 export function GlobalNavigation() {
   return (
@@ -13,21 +15,14 @@ export function GlobalNavigation() {
           className="flex items-center gap-2 text-gray-800 hover:text-[#66C36F] transition-colors"
           aria-label="홈으로 이동"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" />
-          </svg>
-          <span className="hidden sm:inline text-sm font-semibold">
+          <Image
+            src={assetPath("/assets/logos/naver-neuro-logo.png")}
+            alt="홈"
+            width={32}
+            height={32}
+            className="w-10 h-10"
+          />
+          <span className="hidden sm:inline text-lg font-extrabold">
             NAVER AI 신경다양성 연구팀
           </span>
         </Link>
