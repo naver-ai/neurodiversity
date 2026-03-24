@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { TeamMember } from "../_types";
+import { assetPath } from "../_lib/asset-path";
 
 interface MemberCardProps {
   member: TeamMember;
@@ -11,7 +12,7 @@ export function MemberCard({ member }: MemberCardProps) {
       {/* Circular photo */}
       <div className="relative w-[120px] h-[120px] rounded-full overflow-hidden flex-shrink-0 bg-gray-100">
         <Image
-          src={member.photo}
+          src={assetPath(member.photo)}
           alt={member.nameEn ?? member.name}
           fill
           className="object-cover"

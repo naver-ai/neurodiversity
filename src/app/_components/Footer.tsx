@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "../_lib/asset-path";
 
 export function Footer() {
   return (
@@ -7,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="gap-1.5">
             <Image
-              src="/assets/logos/ai_lab_logo_horizontal.png"
+              src={assetPath("/assets/logos/ai_lab_logo_horizontal.png")}
               alt="NAVER AI Lab"
               width={2514}
               height={390}

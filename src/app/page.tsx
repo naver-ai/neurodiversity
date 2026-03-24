@@ -3,6 +3,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/lib/button-variants";
 import { cn } from "@/lib/utils";
 import { loadYAML } from "./_lib/utils";
+import { assetPath } from "./_lib/asset-path";
 import type { TeamMember, ResearchProject, Publication } from "./_types";
 import { ParticipationBanner } from "./_components/ParticipationBanner";
 import { PublicationItem } from "./_components/PublicationItem";
@@ -26,7 +27,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <div className="mb-4">
               <Image
-                src="/assets/logos/ai_lab_logo_horizontal.png"
+                src={assetPath("/assets/logos/ai_lab_logo_horizontal.png")}
                 alt="NAVER AI Lab"
                 width={140}
                 height={22}
@@ -96,7 +97,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 rounded-full bg-gray-200 overflow-hidden mb-2">
                   {member.photo ? (
                     <Image
-                      src={member.photo}
+                      src={assetPath(member.photo)}
                       alt={member.name}
                       width={64}
                       height={64}
