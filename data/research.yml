@@ -1,0 +1,76 @@
+# 연구 프로젝트
+# status: ongoing | completed
+# participationOpen: true이면 실험 참가자 모집 배너 노출
+
+- id: aac-llm
+  title: 대규모 언어 모델 기반 AAC 시스템 개발
+  titleEn: LLM-based AAC System for Children with Autism
+  status: ongoing
+  description: >
+    자폐 스펙트럼 장애 아동의 의사소통을 지원하는 AI 기반 보완대체 의사소통(AAC) 시스템을 개발합니다.
+    대규모 언어 모델을 활용하여 아동의 의도를 파악하고 맥락에 적합한 문장을 생성함으로써
+    더욱 자연스러운 의사소통이 가능하도록 합니다.
+    부모 및 치료사와의 공동 디자인 워크숍을 통해 실제 사용 환경에 최적화된 인터페이스를 연구합니다.
+  keywords: [AAC, LLM, 자폐 스펙트럼, 의사소통 보조, 공동 디자인]
+  members: [pi, researcher1]
+  startYear: 2024
+  participationOpen: true
+  participationDetails:
+    target: 자폐 스펙트럼 장애 진단을 받은 아동 (만 5~12세) 및 주 양육자
+    period: 2025년 4월 ~ 6월
+    compensation: 참여 아동 1인당 문화상품권 5만원
+    contactEmail: aac-study@example.com
+    description: >
+      본 연구는 AI 보조 AAC 앱의 사용성을 평가하기 위한 연구입니다.
+      가정 내에서 2주간 앱을 사용하신 후, 연구팀과 1회 인터뷰(약 60분)에 참여하시면 됩니다.
+      참여 전 연구 목적 및 절차에 대해 충분히 안내 드리며, 언제든지 철회 가능합니다.
+  links:
+    - label: 연구 소개 영상
+      url: https://example.com/aac-video
+
+- id: adhd-focus
+  title: ADHD 아동의 집중력 향상을 위한 게임형 인터페이스 연구
+  titleEn: Gamified Interface for Improving Attention in Children with ADHD
+  status: ongoing
+  description: >
+    ADHD 아동이 일상적인 학습 및 과제 수행 시 집중력을 유지할 수 있도록 게임 요소를 접목한
+    인터페이스를 설계하고 평가합니다. 아동의 행동 패턴과 주의 집중 데이터를 분석하여
+    개인 맞춤형 피드백을 제공하는 적응형 시스템을 개발합니다.
+  keywords: [ADHD, 게임형 학습, 집중력, 적응형 인터페이스]
+  members: [researcher2]
+  startYear: 2024
+  participationOpen: false
+
+- id: sensory-wearable
+  title: 감각 처리 어려움을 가진 아동을 위한 웨어러블 피드백 기기 연구
+  titleEn: Wearable Sensory Feedback Device for Children with Sensory Processing Difficulties
+  status: ongoing
+  description: >
+    감각 처리 어려움을 가진 신경다양성 아동을 위해 촉각 및 고유수용 감각 피드백을 제공하는
+    웨어러블 기기를 프로토타이핑하고 임상 현장에서 효과를 검증합니다.
+  keywords: [웨어러블, 감각 처리, 촉각 피드백, 작업치료]
+  members: [intern1]
+  startYear: 2025
+  participationOpen: true
+  participationDetails:
+    target: 감각 처리 어려움이 있는 아동 (만 4~10세) 및 주 양육자
+    period: 2025년 5월 ~ 7월
+    compensation: 참여 아동 1인당 문화상품권 3만원
+    contactEmail: sensory-study@example.com
+    description: >
+      웨어러블 기기 착용 후 아동의 행동 변화와 양육자 만족도를 관찰하는 연구입니다.
+      주 1회, 총 4회 방문(회당 약 45분)으로 진행됩니다.
+
+- id: parent-stress
+  title: 신경다양성 아동 부모의 정보 탐색 행동 및 기술 지원 요구 연구
+  titleEn: Information-Seeking Behaviors and Technology Support Needs of Parents of Neurodiverse Children
+  status: completed
+  description: >
+    신경다양성 아동을 양육하는 부모의 정보 탐색 패턴, 디지털 도구 활용 현황, 지원 요구를
+    질적 연구 방법으로 분석하였습니다. 30명의 부모 인터뷰와 다이어리 스터디를 통해
+    현재 디지털 서비스의 한계와 개선 방향을 도출하였습니다.
+  keywords: [부모 지원, 정보 탐색, 질적 연구, 다이어리 스터디]
+  members: [pi, researcher1]
+  startYear: 2023
+  endYear: 2024
+  participationOpen: false

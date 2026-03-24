@@ -1,0 +1,41 @@
+# 논문 목록
+# authorHighlights: 굵게 표시할 저자 (팀원)
+# venueType: conference | journal | workshop
+
+- id: autiverse-chi26
+  title: "Autiverse: Eliciting Autistic Adolescents' Daily Narratives through AI-guided Multimodal Journaling"
+  authors: [Migyeong Yang, Kyungah Lee, Jinyoung Han, SoHyun Park, Young-Ho Kim]
+  authorHighlights: [Migyeong Yang, Kyungah Lee, Jinyoung Han, SoHyun Park, Young-Ho Kim]
+  venue: ACM CHI Conference on Human Factors in Computing Systems 2026
+  venueShort: CHI 2026
+  venueType: conference
+  year: 2026
+  month: 4
+  doi: 10.1145/3772318.3791381
+  arxivUrl: https://arxiv.org/abs/2509.17466
+  projectUrl: https://naver-ai.github.io/autiverse
+
+- id: aacesstalk-chi25
+  title: "AACessTalk: Fostering Communication between Minimally Verbal Autistic Children and Parents with Contextual Guidance and Card Recommendation"
+  authors: [Dasom Choi, SoHyun Park, Kyungah Lee, Hwajung Hong, Young-Ho Kim]
+  authorHighlights: [Dasom Choi, SoHyun Park, Kyungah Lee, Hwajung Hong, Young-Ho Kim]
+  venue: ACM CHI Conference on Human Factors in Computing Systems 2025
+  venueShort: CHI 2025
+  venueType: conference
+  year: 2025
+  month: 4
+  award: Best Paper Award
+  doi: 10.1145/3706598.3713792
+  arxivUrl: https://doi.org/10.48550/arXiv.2409.09641
+  projectUrl: https://naver-ai.github.io/aacesstalk
+
+- id: autihero-arxiv25
+  title: "AutiHero: Leveraging Generative AI in Social Narratives to Engage Parents in Story-Driven Behavioral Guidance for Autistic Children"
+  authors: [Jungeun Lee, Kyungah Lee, Inseok Hwang, SoHyun Park, Young-Ho Kim]
+  authorHighlights: [Jungeun Lee, Kyungah Lee, Inseok Hwang, SoHyun Park, Young-Ho Kim]
+  venue: Nonarchival preprint
+  venueShort: arXiv 2025
+  venueType: workshop
+  year: 2025
+  month: 9
+  arxivUrl: https://arxiv.org/abs/2509.17608
