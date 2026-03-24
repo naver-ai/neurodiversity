@@ -28,7 +28,7 @@ export function GlobalNavigation() {
             <polyline points="9 22 9 12 15 12 15 22" />
           </svg>
           <span className="hidden sm:inline text-sm font-semibold">
-            뉴로다이버시티 연구팀
+            NAVER AI 신경다양성 연구팀
           </span>
         </Link>
 
@@ -36,7 +36,7 @@ export function GlobalNavigation() {
         <nav className="flex items-center gap-6">
           <NavLink href="/team">연구진 소개</NavLink>
           <NavLink href="/research">진행중인 연구</NavLink>
-          <NavLink href="/publications">연구성과</NavLink>
+          <NavLink href="/publications">논문 성과</NavLink>
         </nav>
       </div>
     </header>

@@ -7,7 +7,7 @@
   role: 리서치 사이언티스트, 연구책임자
   affiliation: 네이버 AI랩
   website: http://younghokim.net/
-  photo: https://naver-ai.github.io/autiverse/thumb-yhkim.321eb8df.jpg
+  photo: /assets/team/yhkim.jpg
   status: current
 
 - id: yangmikyung
@@ -16,7 +16,7 @@
   role: 리서치 사이언티스트
   affiliation: 네이버 AI랩
   website: https://yangmigyeong.github.io/
-  photo: https://naver-ai.github.io/autiverse/thumb-mgyang.4c98c8a3.jpg
+  photo: /assets/team/mgyang.jpg
   status: current
 
 - id: parksohyun
@@ -24,7 +24,7 @@
   nameEn: SoHyun Park
   role: 겸임 리서치 사이언티스트
   affiliation: 네이버 클라우드
-  photo: https://naver-ai.github.io/aacesstalk/thumb-shpark.c72082f9.jpg
+  photo: /assets/team/thumb-shpark.jpg
   status: current
 
 - id: leekyunga
@@ -32,7 +32,7 @@
   nameEn: Kyungah Lee
   role: 도닥임 아동발달센터 원장
   affiliation: 네이버 연구자문역
-  photo: https://naver-ai.github.io/autiverse/thumb-kalee.128c4f57.jpg
+  photo: /assets/team/thumb-kalee.jpg
   status: current
 
 - id: choidasom
@@ -41,7 +41,7 @@
   role: 조교수
   affiliation: 싱가포르 국립대학교
   website: https://dasomchoi.com/
-  photo: https://naver-ai.github.io/aacesstalk/thumb-dschoi.dec00905.jpg
+  photo: /assets/team/dschoi.jpg
   note: "*KAIST 박사과정 시절 네이버 AI랩 리서치 인턴으로 연구 수행"
   status: alumni
 
@@ -50,7 +50,8 @@
   nameEn: Jungeun Lee
   role: 박사과정
   affiliation: POSTECH
-  photo: /assets/team/placeholder.svg
+  website: https://www.jungeunlee.me/
+  photo: /assets/team/jelee.jpg
   note: "*네이버 AI랩 리서치 인턴"
   status: alumni
 
@@ -60,7 +61,7 @@
   role: 부교수
   affiliation: KAIST
   website: https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423
-  photo: https://naver-ai.github.io/aacesstalk/thumb-hjhong.28c82a66.jpg
+  photo: /assets/team/thumb-hjhong.jpg
   status: collaborator
 
 - id: hanjinyoung
@@ -69,7 +70,7 @@
   role: 부교수
   affiliation: 성균관대학교
   website: https://sites.google.com/view/datasciencelab/home
-  photo: https://naver-ai.github.io/autiverse/thumb-jyhan.44822bf2.jpg
+  photo: /assets/team/jyhan.webp
   status: collaborator
 
 - id: hwanginseok
@@ -77,5 +78,5 @@
   nameEn: Inseok Hwang
   role: 부교수
   affiliation: POSTECH
-  photo: /assets/team/placeholder.svg
+  photo: /assets/team/ishwang.jpg
   status: collaborator

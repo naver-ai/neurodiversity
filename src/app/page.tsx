@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "@/lib/button-variants";
 import { cn } from "@/lib/utils";
@@ -22,19 +23,23 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-green-50 to-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-          <div className="max-w-2xl">
-            <span className="inline-block text-xs font-semibold text-[#66C36F] uppercase tracking-widest mb-3">
-              NAVER Corp.
-            </span>
+          <div className="max-w-3xl">
+            <div className="mb-4">
+              <Image
+                src="/assets/logos/ai_lab_logo_horizontal.png"
+                alt="NAVER AI Lab"
+                width={140}
+                height={22}
+                className="h-12 w-auto"
+              />
+            </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
-              뉴로다이버시티
-              <br />
-              연구팀
+              네이버 AI랩 신경다양성 연구팀
             </h1>
             <p className="mt-4 text-base text-gray-600 leading-relaxed">
-              자폐 스펙트럼 장애, ADHD 등 신경다양성을 가진 아동과 가족의 삶의
-              질을 향상시키는 기술을 연구합니다. 우리의 연구는 실제 사용자와
-              함께하는 참여형 디자인을 기반으로 합니다.
+              자폐 스펙트럼 장애, ADHD 등 신경다양성을 가진 아동/청소년/성인과 가족의 삶의
+              질을 향상시키는 기술을 연구합니다. 실제 사용자와
+              함께하는 참여형 디자인, 공학적 시스템 프로토타이핑 및 사용자 평가 등 HCI (인간-컴퓨터 상호작용) 연구방법론을 기반으로 합니다.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/research" className={cn(buttonVariants(), "bg-[#66C36F] hover:bg-[#55b05e] text-white")}>
@@ -88,8 +93,20 @@ export default function HomePage() {
                 key={member.id}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-16 h-16 rounded-full bg-gray-200 overflow-hidden mb-2 flex items-center justify-center text-lg font-bold text-gray-500">
-                  {member.name.charAt(0)}
+                <div className="w-16 h-16 rounded-full bg-gray-200 overflow-hidden mb-2">
+                  {member.photo ? (
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-lg font-bold text-gray-500">
+                      {member.name.charAt(0)}
+                    </div>
+                  )}
                 </div>
                 <p className="text-sm font-medium text-gray-900">
                   {member.name}

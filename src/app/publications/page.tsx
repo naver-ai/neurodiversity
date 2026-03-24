@@ -5,7 +5,7 @@ import { PublicationItem } from "../_components/PublicationItem";
 import { SectionTitle } from "../_components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "연구성과",
+  title: "논문 성과",
 };
 
 export default function PublicationsPage() {
@@ -29,7 +29,7 @@ export default function PublicationsPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
       <SectionTitle
-        title="연구성과"
+        title="논문 성과"
         subtitle={`총 ${publications.length}편의 논문`}
       />
 
