@@ -15,9 +15,7 @@ export default function HomePage() {
   const recentPublications = [...publications]
     .sort((a, b) => b.year - a.year || (b.month ?? 0) - (a.month ?? 0))
     .slice(0, 3);
-  const currentMembers = teamMembers
-    .filter((m) => m.status === "current")
-    .sort((a, b) => a.order - b.order);
+  const currentMembers = teamMembers.filter((m) => m.status === "current");
 
   return (
     <div>
