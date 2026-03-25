@@ -5,12 +5,13 @@ interface SectionTitleProps {
 
 export function SectionTitle({ title, subtitle }: SectionTitleProps) {
   return (
-    <div className="mb-8">
-      <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+    <div className="mb-16 flex items-baseline gap-4 flex-wrap">
+      <h1 className="text-3xl font-bold text-gray-900 leading-tight tracking-tight">
+        {title}
+      </h1>
       {subtitle && (
-        <p className="mt-1 text-sm text-gray-500">{subtitle}</p>
+        <p className="text-base text-gray-500">{subtitle}</p>
       )}
-      <div className="mt-3 h-1 w-12 rounded bg-[#66C36F]" />
     </div>
   );
 }
