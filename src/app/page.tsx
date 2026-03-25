@@ -37,17 +37,6 @@ export default function HomePage() {
                 질을 향상시키는 기술을 연구합니다. 실제 사용자와 함께하는 참여형 디자인, 공학적 시스템
                 프로토타이핑 및 사용자 평가 등 HCI (인간-컴퓨터 상호작용) 연구방법론을 기반으로 합니다.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/research"
-                  className={cn(buttonVariants(), "bg-brand hover:bg-brand-hover text-white")}
-                >
-                  진행중인 연구 보기
-                </Link>
-                <Link href="/team" className={buttonVariants({ variant: "outline" })}>
-                  연구진 소개
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -85,7 +74,7 @@ export default function HomePage() {
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-5">
               {currentMembers.map((member) => (
                 <div key={member.id} className="flex flex-col items-center text-center">
-                  <div className="w-14 h-14 rounded-full bg-gray-100 overflow-hidden mb-2">
+                  <div className="w-18 h-18 rounded-full bg-gray-100 overflow-hidden mb-2">
                     {member.photo ? (
                       <Image
                         src={assetPath(member.photo)}

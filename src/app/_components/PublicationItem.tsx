@@ -89,7 +89,7 @@ export function PublicationItem({ publication: p }: PublicationItemProps) {
             {p.projectUrl && (
               <a href={p.projectUrl} target="_blank" rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-700 underline underline-offset-2 transition-colors">
-                Project
+                웹사이트 →
               </a>
             )}
           </div>

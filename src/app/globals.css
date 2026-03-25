@@ -54,8 +54,8 @@
 }
 
 :root {
-  --brand: #ff8628;
-  --brand-hover: #e57520;
+  --brand: #1d50e0;
+  --brand-hover: #1844c4;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);

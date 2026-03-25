@@ -23,13 +23,9 @@ export function ResearchCard({ project }: ResearchCardProps) {
         </span>
       </div>
 
-      <h3 className="text-lg font-bold text-gray-900 leading-snug mb-1">
+      <h3 className="text-sm font-bold text-gray-900 leading-snug mb-1">
         {project.title}
       </h3>
-      {project.titleEn && (
-        <p className="text-xs text-gray-400 mb-3">{project.titleEn}</p>
-      )}
-
       <p className="text-sm text-gray-600 leading-relaxed mb-4">
         {project.description}
       </p>
