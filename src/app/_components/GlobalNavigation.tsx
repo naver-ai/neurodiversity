@@ -7,11 +7,11 @@ import { assetPath } from "../_lib/asset-path";
 
 export function GlobalNavigation() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/85 backdrop-blur-sm border-b border-gray-100/80 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-zinc-900 border-b border-white/10">
       <div className="max-w-5xl mx-auto px-6 h-18 flex items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-2.5 text-gray-900 hover:opacity-70 transition-opacity"
+          className="flex items-center gap-2.5 text-white hover:opacity-70 transition-opacity"
           aria-label="홈으로 이동"
         >
           <Image
@@ -21,7 +21,7 @@ export function GlobalNavigation() {
             height={28}
             className="w-10 h-10"
           />
-          <span className="hidden sm:inline text-lg font-extrabold tracking-tight">
+          <span className="hidden sm:inline text-lg font-extrabold tracking-tight text-white">
             NAVER AI 신경다양성 연구팀
           </span>
         </Link>

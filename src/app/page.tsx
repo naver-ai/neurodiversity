@@ -23,17 +23,21 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="border-b border-gray-100">
-        <div className="max-w-5xl mx-auto px-6 py-20 sm:py-28">
-          <div className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-10 items-start">
+      <section
+        className="border-b border-gray-100 bg-cover bg-center relative"
+        style={{ backgroundImage: `url(${assetPath('/assets/hero-bg')})` }}
+      >
+        <div className="absolute inset-0 bg-zinc-700/50" />
+        <div className="relative max-w-5xl mx-auto px-6 py-12 sm:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-10 items-center">
             <div>
-              <h1 className="text-3xl font-extrabold text-gray-900 leading-10 tracking-tight">
+              <h1 className="text-3xl font-extrabold text-white leading-10 tracking-tight">
                 NAVER AI<br />신경다양성<br />연구팀
               </h1>
             </div>
             <div className="pt-1">
-              <p className="text-base text-gray-600 leading-relaxed mb-8">
-                저희는 자폐 스펙트럼 장애, ADHD 등 신경다양성을 가진 아동/청소년/성인과 가족의 삶의
+              <p className="text-base text-white/90 leading-relaxed">
+                자폐 스펙트럼 장애, ADHD 등 신경다양성을 가진 아동/청소년/성인과 가족의 삶의
                 질을 향상시키는 기술을 연구합니다. 실제 사용자와 함께하는 참여형 디자인, 공학적 시스템
                 프로토타이핑 및 사용자 평가 등 HCI (인간-컴퓨터 상호작용) 연구방법론을 기반으로 합니다.
               </p>
