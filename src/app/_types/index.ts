@@ -62,4 +62,5 @@ export interface Publication {
   arxivUrl?: string;
   projectUrl?: string;
   keywords?: string[];
+  thumb?: string;
 }

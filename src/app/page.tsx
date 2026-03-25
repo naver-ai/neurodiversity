@@ -25,7 +25,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-20 sm:py-28">
-          <div className="grid grid-cols-1 sm:grid-cols-[5fr_7fr] gap-10 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-10 items-start">
             <div>
               <h1 className="text-3xl font-extrabold text-gray-900 leading-10 tracking-tight">
                 NAVER AI<br />신경다양성<br />연구팀
@@ -56,7 +56,7 @@ export default function HomePage() {
       {/* Open participation */}
       {openProjects.length > 0 && (
         <section className="max-w-5xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-[5fr_7fr] gap-10 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-10 items-start">
             <div>
               <SectionHeader>실험 참가자 모집 중</SectionHeader>
               <Link href="/research" className="text-sm text-gray-400 hover:text-gray-700 mt-1 inline-block transition-colors">
@@ -75,7 +75,7 @@ export default function HomePage() {
       {/* Team overview */}
       <section className="border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-[5fr_7fr] gap-10 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-10 items-start">
             <div>
               <SectionHeader>연구진</SectionHeader>
               <Link href="/team" className="text-sm text-gray-400 hover:text-gray-700 mt-1 inline-block transition-colors">
@@ -111,9 +111,9 @@ export default function HomePage() {
 
       {/* Recent publications */}
       <section className="max-w-5xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-[5fr_7fr] gap-10 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-10 items-start">
           <div>
-            <SectionHeader>최근 연구성과</SectionHeader>
+            <SectionHeader>최근 논문 성과</SectionHeader>
             <Link href="/publications" className="text-sm text-gray-400 hover:text-gray-700 mt-1 inline-block transition-colors">
               전체 보기 →
             </Link>

@@ -32,9 +32,9 @@ export default function PublicationsPage() {
 
       <div className="flex flex-col gap-12">
         {years.map((year) => (
-          <div key={year} className="grid grid-cols-1 sm:grid-cols-[5fr_7fr] gap-8 items-start">
+          <div key={year} className="grid grid-cols-1 sm:grid-cols-[3fr_7fr] gap-8 items-start">
             <div className="pt-6 border-t border-gray-100">
-              <span className="text-sm font-bold text-gray-400 tracking-widest">{year}</span>
+              <span className="text-xl font-bold text-gray-900">{year}</span>
             </div>
             <div>
               {byYear[year].map((pub) => (

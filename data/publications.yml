@@ -3,6 +3,7 @@
 # venueType: conference | journal | workshop
 
 - id: autiverse-chi26
+  thumb: /images/paper-thumbs/autiverse-square-thumb.mp4
   title: "Autiverse: Eliciting Autistic Adolescents' Daily Narratives through AI-guided Multimodal Journaling"
   authors: [Migyeong Yang, Kyungah Lee, Jinyoung Han, SoHyun Park, Young-Ho Kim]
   authorHighlights: [Migyeong Yang, Kyungah Lee, Jinyoung Han, SoHyun Park, Young-Ho Kim]
@@ -16,6 +17,7 @@
   projectUrl: https://naver-ai.github.io/autiverse
 
 - id: aacesstalk-chi25
+  thumb: /images/paper-thumbs/aacesstalk-square-thumb.mp4
   title: "AACessTalk: Fostering Communication between Minimally Verbal Autistic Children and Parents with Contextual Guidance and Card Recommendation"
   authors: [Dasom Choi, SoHyun Park, Kyungah Lee, Hwajung Hong, Young-Ho Kim]
   authorHighlights: [Dasom Choi, SoHyun Park, Kyungah Lee, Hwajung Hong, Young-Ho Kim]
@@ -30,6 +32,7 @@
   projectUrl: https://naver-ai.github.io/aacesstalk
 
 - id: autihero-arxiv25
+  thumb: /images/paper-thumbs/autihero-square-thumb.mp4
   title: "AutiHero: Leveraging Generative AI in Social Narratives to Engage Parents in Story-Driven Behavioral Guidance for Autistic Children"
   authors: [Jungeun Lee, Kyungah Lee, Inseok Hwang, SoHyun Park, Young-Ho Kim]
   authorHighlights: [Jungeun Lee, Kyungah Lee, Inseok Hwang, SoHyun Park, Young-Ho Kim]
