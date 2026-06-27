@@ -37,7 +37,7 @@ export interface ResearchProject {
 export interface PressItem {
   id: string;
   title: string;
-  type: "article" | "video";
+  type: "article" | "video" | "magazine" | "post";
   year: number;
   month?: number;
   url?: string;

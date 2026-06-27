@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { loadYAML } from "../_lib/utils";
-import type { Publication } from "../_types";
-import { PublicationItem } from "../_components/PublicationItem";
+import { loadYAML } from "../../_lib/utils";
+import { requireSitePublished } from "../../_lib/require-published";
+import type { Publication } from "../../_types";
+import { PublicationItem } from "../../_components/PublicationItem";
 
-export const metadata: Metadata = {
-  title: "논문 성과",
-};
+export function generateMetadata(): Metadata {
+  requireSitePublished();
+  return { title: "논문 성과" };
+}
 
 export default function PublicationsPage() {
+  requireSitePublished();
+
   const publications = loadYAML<Publication[]>("publications.yml");
 
   const sorted = [...publications].sort(

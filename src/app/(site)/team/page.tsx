@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { loadYAML } from "../_lib/utils";
-import type { TeamMember } from "../_types";
-import { MemberCard } from "../_components/MemberCard";
-import { SectionHeader } from "../_components/SectionHeader";
+import { loadYAML } from "../../_lib/utils";
+import { requireSitePublished } from "../../_lib/require-published";
+import type { TeamMember } from "../../_types";
+import { MemberCard } from "../../_components/MemberCard";
+import { SectionHeader } from "../../_components/SectionHeader";
 
-export const metadata: Metadata = {
-  title: "연구진 소개",
-};
+export function generateMetadata(): Metadata {
+  requireSitePublished();
+  return { title: "연구진 소개" };
+}
 
 export default function TeamPage() {
+  requireSitePublished();
+
   const members = loadYAML<TeamMember[]>("team.yml");
   const currentMembers = members.filter((m) => m.status === "current");
   const alumni = members.filter((m) => m.status === "alumni");

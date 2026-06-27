@@ -1,3 +1,27 @@
+- id: press-009
+  title: "AI가 여는 첫 대화: 무발화 자폐 아동과 부모를 위한 액세스톡"
+  type: video
+  year: 2025
+  month: 11
+  url: https://www.youtube.com/watch?v=wFbqfuMbxBA
+  body: 네이버 DAN 행사의 네이버클라우드 키노트에서 도닥임아동발달센터와의 액세스톡 연구 협력사례가 소개되었습니다.
+
+- id: press-008
+  title: "모두를 끌어안는 AI"
+  type: magazine
+  year: 2026
+  month: 4
+  url: https://fficial.naver.com/contentDetail/172
+  body: "'네이버라서 할 수 있는 AI 연구는 무엇일까?'를 주제로 한 NAVERfficial 인터뷰. 신경다양성 등 모두를 끌어안는 네이버의 포용적 AI 연구를 소개합니다."
+
+- id: press-007
+  title: "AI와 함께 쓰는 만화 일기 Autiverse: 자폐 청소년의 하루를 이야기로 풀어내다"
+  type: post
+  year: 2026
+  month: 4
+  url: https://clova.ai/tech-blog/ai%EC%99%80-%ED%95%A8%EA%BB%98-%EC%93%B0%EB%8A%94-%EB%A7%8C%ED%99%94-%EC%9D%BC%EA%B8%B0-autiverse-%EC%9E%90%ED%8F%90-%EC%B2%AD%EC%86%8C%EB%85%84%EC%9D%98-%ED%95%98%EB%A3%A8%EB%A5%BC-%EC%9D%B4
+  body: AI 기반 태블릿 앱 Autiverse는 자폐 청소년이 일상을 'A-B-C-E 네 컷 만화 구조'로 정리하도록 돕습니다. 단계적 대화를 통해 상황·행동·결과·감정을 체계적으로 끌어내며 부모와 자녀 간 소통을 촉진합니다.
+
 - id: press-006
   title: '제12회 널리 웨비나: Designing Inclusive AI for Marginalized Population'
   type: video
@@ -15,7 +39,7 @@
   body: 김영호 연구책임자가 2025 춘계학술대회에서 자폐 아동의 AI 기반 소통 연구를 소개하였습니다.
 
 - id: press-002
-  title: KBS N AI토피아
+  title: KBS N AI토피아 - 포용적 AI 편 (유튜버 궤도, 이승현 아나운서, 김영호)
   type: video
   year: 2025
   month: 11

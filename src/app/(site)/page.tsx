@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { buttonVariants } from "@/lib/button-variants";
-import { cn } from "@/lib/utils";
-import { loadYAML } from "./_lib/utils";
-import { assetPath } from "./_lib/asset-path";
-import type { TeamMember, ResearchProject, Publication } from "./_types";
-import { ParticipationBanner } from "./_components/ParticipationBanner";
-import { PublicationItem } from "./_components/PublicationItem";
-import { SectionHeader } from "./_components/SectionHeader";
+import { loadYAML } from "../_lib/utils";
+import { assetPath } from "../_lib/asset-path";
+import { requireSitePublished } from "../_lib/require-published";
+import type { TeamMember, ResearchProject, Publication } from "../_types";
+import { ParticipationBanner } from "../_components/ParticipationBanner";
+import { PublicationItem } from "../_components/PublicationItem";
+import { SectionHeader } from "../_components/SectionHeader";
 
 export default function HomePage() {
+  requireSitePublished();
+
   const teamMembers = loadYAML<TeamMember[]>("team.yml");
   const researchProjects = loadYAML<ResearchProject[]>("research.yml");
   const publications = loadYAML<Publication[]>("publications.yml");

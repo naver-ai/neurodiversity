@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { loadYAML } from "../_lib/utils";
-import type { ResearchProject } from "../_types";
-import { ResearchCard } from "../_components/ResearchCard";
-import { ParticipationBanner } from "../_components/ParticipationBanner";
-import { SectionHeader } from "../_components/SectionHeader";
+import { loadYAML } from "../../_lib/utils";
+import { requireSitePublished } from "../../_lib/require-published";
+import type { ResearchProject } from "../../_types";
+import { ResearchCard } from "../../_components/ResearchCard";
+import { ParticipationBanner } from "../../_components/ParticipationBanner";
+import { SectionHeader } from "../../_components/SectionHeader";
 
-export const metadata: Metadata = {
-  title: "진행중인 연구",
-};
+export function generateMetadata(): Metadata {
+  requireSitePublished();
+  return { title: "진행중인 연구" };
+}
 
 export default function ResearchPage() {
+  requireSitePublished();
+
   const projects = loadYAML<ResearchProject[]>("research.yml");
   const ongoing = projects.filter((p) => p.status === "ongoing");
   const completed = projects.filter((p) => p.status === "completed");
