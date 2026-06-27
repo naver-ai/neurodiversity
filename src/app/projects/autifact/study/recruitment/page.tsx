@@ -69,8 +69,8 @@ export default function AutifactRecruitmentPage() {
   );
 
   return (
-    <div className="min-h-screen bg-[#f4f4f2] py-8 sm:py-12 px-4">
-      <article className="mx-auto max-w-[860px] overflow-hidden rounded-2xl bg-white shadow-[0_8px_40px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
+    <div className="min-h-screen bg-[#f4f4f2] sm:py-12 sm:px-4">
+      <article className="mx-auto max-w-[860px] overflow-hidden bg-white sm:rounded-2xl sm:shadow-[0_8px_40px_rgba(0,0,0,0.08)] sm:ring-1 sm:ring-black/5">
         <div className="px-6 py-8 sm:px-12 sm:py-10">
           {/* ── 헤더: 뱃지 + 로고 ───────────────────────────────── */}
           <header className="flex flex-wrap items-center justify-between gap-4">
@@ -261,21 +261,24 @@ export default function AutifactRecruitmentPage() {
             *본 연구는 네이버의 비영리 학술연구 조직에서 진행하는 연구로, 참가자로부터 얻은 지식은 네이버의
             서비스/제품개발이 아닌 사회적/학술적 기여를 목적으로 활용됩니다.
           </p>
-
-          {/* ── 참고: 연구진의 과거 연구 사례 / 보도자료 ─────────── */}
-          <section className="mt-10">
-            <SectionTag>연구진의 과거 연구 사례 / 보도자료</SectionTag>
-            <p className="mt-4 text-[15px] leading-relaxed text-gray-600">
-              참고를 위해 연구팀의 관련 연구 및 언론 보도 사례를 함께 안내드립니다.
-            </p>
-            <div className="mt-2 flex flex-col">
-              {pressItems.map((item) => (
-                <PressCard key={item.id} item={item} compact />
-              ))}
-            </div>
-          </section>
         </div>
       </article>
+
+      {/* ── 참고: 연구진의 과거 연구 사례 / 보도자료 — 패널 없이 회색 배경 위에 노출 ── */}
+      <section className="mx-auto mt-2 max-w-[860px] sm:mt-6">
+        <div className="px-6 py-8 sm:px-12">
+          <SectionTag>연구진의 과거 연구 사례 / 보도자료</SectionTag>
+          <p className="mt-4 text-[15px] leading-relaxed text-gray-600">
+            참고를 위해 연구팀의 관련 연구 및 언론 보도 사례를 함께 안내드립니다.
+          </p>
+          {/* PressCard 구분선(border-gray-100)이 회색 배경에 묻히므로 약간 진하게 덮어씁니다 */}
+          <div className="mt-2 flex flex-col [&>article]:border-gray-200">
+            {pressItems.map((item) => (
+              <PressCard key={item.id} item={item} compact />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
