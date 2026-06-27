@@ -115,7 +115,16 @@ export default function AutifactRecruitmentPage() {
                 </div>
               )}
             </div>
+
+            
           </div>
+
+
+          {/* ── 하단 안내 ──────────────────────────────────────── */}
+          <p className="mt-10 border-t border-gray-100 pt-6 text-sm font-bold leading-relaxed" style={{ color: C.mint }}>
+            *본 연구는 네이버의 비영리 학술연구 조직에서 진행하는 연구로, 실험으로부터 얻은 지식과 데이터는 네이버의
+            서비스/제품개발이 아닌 사회적/학술적 기여를 목적으로 활용됩니다.
+          </p>
 
           {/* ── 모집 대상 ───────────────────────────────────────── */}
           <section className="mt-10">
@@ -255,12 +264,6 @@ export default function AutifactRecruitmentPage() {
             </div>
           </section>
 
-
-          {/* ── 하단 안내 ──────────────────────────────────────── */}
-          <p className="mt-10 border-t border-gray-100 pt-6 text-sm font-bold leading-relaxed" style={{ color: C.mint }}>
-            *본 연구는 네이버의 비영리 학술연구 조직에서 진행하는 연구로, 참가자로부터 얻은 지식은 네이버의
-            서비스/제품개발이 아닌 사회적/학술적 기여를 목적으로 활용됩니다.
-          </p>
         </div>
       </article>
 
