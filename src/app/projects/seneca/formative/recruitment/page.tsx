@@ -6,7 +6,7 @@ import {
   RecruitmentHero,
   RecruitmentSection,
   RecruitmentApply,
-  OrderedList,
+  UnorderedList,
   Keep,
 } from "@/app/_components/RecruitmentTemplate";
 
@@ -91,12 +91,11 @@ export default function SenecaRecruitmentPage() {
             다음 중 하나에 해당하는 경험과 지식을 가진 전문가를 모집합니다.
           </p>
           <div className="mt-4 rounded-xl px-6 py-6 sm:px-8" style={{ backgroundColor: "#f3f3f3" }}>
-            <OrderedList
-              marker="upper-alpha"
+            <UnorderedList
               items={[
-                <>노년층을 대상으로 인공지능 시스템을 설계 및 구현해 본 전문가</>,
-                <>노년층의 의사소통 관련한 연구를 수행하거나 논문을 출판한 전문가</>,
                 <>노년층 대상 심리 상담, 코칭, 언어치료 전문가</>,
+                <>노년층의 의사소통 관련한 연구를 수행하거나 논문을 출판한 전문가</>,
+                <>노년층을 대상으로 인공지능 시스템을 설계 및 구현해 본 전문가</>,
               ]}
             />
           </div>

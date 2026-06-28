@@ -182,6 +182,23 @@ export function OrderedList({
   );
 }
 
+/* ── 순서 없는 목록 (• 불릿) ──────────────────────────────────────── */
+
+export function UnorderedList({ items }: { items: React.ReactNode[] }) {
+  return (
+    <ul className="space-y-2.5">
+      {items.map((node, i) => (
+        <li key={i} className="flex gap-2.5 text-[15px] leading-relaxed text-gray-700">
+          <span className="shrink-0 font-bold text-gray-800" aria-hidden>
+            •
+          </span>
+          <span>{node}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 /* ── 참가 신청 및 문의 (CTA 버튼 + QR) ───────────────────────────── */
 
 export function RecruitmentApply({
