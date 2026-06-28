@@ -76,8 +76,8 @@ export default function SenecaRecruitmentPage() {
           }}
         />
 
-        {/* ── 안내 문구 ─────────────────────────────────────────── */}
-        <RecruitmentNote color={ACCENT} />
+        {/* ── 안내 문구 (Autifact와 동일한 민트색) ───────────────── */}
+        <RecruitmentNote color="#28a156" />
 
         {/* ── 연구 목적 ─────────────────────────────────────────── */}
         <RecruitmentSection tag="연구 목적">
