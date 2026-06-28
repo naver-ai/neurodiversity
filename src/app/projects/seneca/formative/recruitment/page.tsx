@@ -106,7 +106,7 @@ export default function SenecaRecruitmentPage() {
         {/* ── 인터뷰 진행 방식 및 소요 시간 ─────────────────────── */}
         <RecruitmentSection tag="인터뷰 진행 방식 및 소요 시간">
           <p className="mt-4 text-[15px] leading-relaxed text-gray-700">
-            <Keep>1:1 비대면</Keep>으로 약 <b>1시간 30분</b> 가량 소요됩니다. 노인 의사소통의 특성과
+            <Keep>Zoom 온라인 비대면</Keep>으로 약 <b>1시간 30분</b> 가량 소요됩니다. 노인 의사소통의 특성과
             어려움 이해 (30분), 인공지능 응답 적절성 검토 (30분), 인공지능 시스템에 대한 피드백
             (30분) 순으로 진행됩니다.
           </p>
