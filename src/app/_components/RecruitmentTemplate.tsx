@@ -127,6 +127,31 @@ export function RecruitmentHero({
   );
 }
 
+/* ── 안내 문구 (네이버 비영리 학술연구 고지) ─────────────────────── */
+
+export function RecruitmentNote({
+  color,
+  children,
+}: {
+  color: string;
+  /** 기본 고지 문구를 다른 내용으로 바꾸고 싶을 때 */
+  children?: React.ReactNode;
+}) {
+  return (
+    <p
+      className="mt-10 border-t border-gray-100 pt-6 text-sm font-bold leading-relaxed"
+      style={{ color }}
+    >
+      {children ?? (
+        <>
+          *본 연구는 네이버의 비영리 학술연구 조직에서 진행하는 연구로, 실험으로부터 얻은 지식과
+          데이터는 네이버의 서비스/제품개발이 아닌 사회적/학술적 기여를 목적으로 활용됩니다.
+        </>
+      )}
+    </p>
+  );
+}
+
 /* ── 섹션: 어두운 풀블리드 라벨 + 본문 ───────────────────────────── */
 
 export function SectionTag({ children }: { children: React.ReactNode }) {

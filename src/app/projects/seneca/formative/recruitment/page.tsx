@@ -4,6 +4,7 @@ import {
   RecruitmentCard,
   RecruitmentHeader,
   RecruitmentHero,
+  RecruitmentNote,
   RecruitmentSection,
   RecruitmentApply,
   UnorderedList,
@@ -74,6 +75,9 @@ export default function SenecaRecruitmentPage() {
             height: 500,
           }}
         />
+
+        {/* ── 안내 문구 ─────────────────────────────────────────── */}
+        <RecruitmentNote color={ACCENT} />
 
         {/* ── 연구 목적 ─────────────────────────────────────────── */}
         <RecruitmentSection tag="연구 목적">

@@ -7,6 +7,7 @@ import {
   RecruitmentCard,
   RecruitmentHeader,
   RecruitmentHero,
+  RecruitmentNote,
   RecruitmentSection,
   RecruitmentApply,
   SectionTag,
@@ -84,13 +85,7 @@ export default function AutifactRecruitmentPage() {
         />
 
         {/* ── 하단 안내 ──────────────────────────────────────── */}
-        <p
-          className="mt-10 border-t border-gray-100 pt-6 text-sm font-bold leading-relaxed"
-          style={{ color: C.mint }}
-        >
-          *본 연구는 네이버의 비영리 학술연구 조직에서 진행하는 연구로, 실험으로부터 얻은 지식과
-          데이터는 네이버의 서비스/제품개발이 아닌 사회적/학술적 기여를 목적으로 활용됩니다.
-        </p>
+        <RecruitmentNote color={C.mint} />
 
         {/* ── 모집 대상 ───────────────────────────────────────── */}
         <RecruitmentSection tag="모집 대상">
