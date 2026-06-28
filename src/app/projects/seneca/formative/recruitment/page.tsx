@@ -7,7 +7,6 @@ import {
   RecruitmentSection,
   RecruitmentApply,
   OrderedList,
-  U,
   Keep,
 } from "@/app/_components/RecruitmentTemplate";
 
@@ -97,7 +96,7 @@ export default function SenecaRecruitmentPage() {
               items={[
                 <>노년층을 대상으로 인공지능 시스템을 설계 및 구현해 본 전문가</>,
                 <>노년층의 의사소통 관련한 연구를 수행하거나 논문을 출판한 전문가</>,
-                <U>노년층 대상 심리 상담, 코칭, 언어치료 전문가</U>,
+                <>노년층 대상 심리 상담, 코칭, 언어치료 전문가</>,
               ]}
             />
           </div>
