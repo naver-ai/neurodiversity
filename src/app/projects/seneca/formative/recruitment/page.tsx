@@ -20,7 +20,7 @@ import {
 
 // 배너 QR(bit.ly/4vnQr0d) 신청 설문 링크. 버튼/QR 모두 같은 설문으로 연결됩니다.
 const FORM_URL = "https://bit.ly/4vnQr0d";
-const CONTACT_EMAIL = "dl_neuro@navercorp.com";
+const CONTACT_EMAIL = "dl_hci@navercorp.com";
 
 // 배너 강조색 (미시건 대학교 블루)
 const ACCENT = "#00274c";
@@ -131,7 +131,7 @@ export default function SenecaRecruitmentPage() {
             cta={{ label: "참가 신청하기", href: FORM_URL, color: ACCENT }}
             contact={
               <p>
-                <span className="font-bold text-gray-700">문의</span> 네이버 AI랩 신경다양성 연구팀{" "}
+                <span className="font-bold text-gray-700">문의</span> 네이버 AI랩 인간컴퓨터상호작용 연구팀{" "}
                 <a href={`mailto:${CONTACT_EMAIL}`} className="text-brand hover:underline">
                   {CONTACT_EMAIL}
                 </a>
