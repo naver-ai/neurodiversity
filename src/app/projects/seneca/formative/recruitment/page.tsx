@@ -66,7 +66,7 @@ export default function SenecaRecruitmentPage() {
               <Keep>대화형 인공지능</Keep> 연구
             </>
           }
-          subtitle={<>고령자와의 의사소통 관련 전문가 피드백</>}
+          subtitle={<>고령자와의 의사소통 관련 전문가 피드백 청취</>}
           image={{
             src: "/assets/projects/seneca/hero.png",
             alt: "두 노년층이 대화하는 모습 일러스트",
