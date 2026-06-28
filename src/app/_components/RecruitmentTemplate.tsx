@@ -91,16 +91,26 @@ export function RecruitmentHeader({
 
 export function RecruitmentHero({
   title,
+  subtitle,
   image,
 }: {
   title: React.ReactNode;
+  /** 연구명 아래에 들어갈 부제 */
+  subtitle?: React.ReactNode;
   image?: { src: string; alt: string; width: number; height: number } | null;
 }) {
   return (
     <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-      <h1 className="text-[26px] font-extrabold leading-snug tracking-tight text-gray-900 sm:text-[28px]">
-        {title}
-      </h1>
+      <div>
+        <h1 className="text-[26px] font-extrabold leading-snug tracking-tight text-gray-900 sm:text-[28px]">
+          {title}
+        </h1>
+        {subtitle ? (
+          <p className="mt-3 text-[17px] font-bold leading-snug text-gray-500 sm:text-lg">
+            {subtitle}
+          </p>
+        ) : null}
+      </div>
       {image ? (
         <div className="shrink-0 sm:w-64">
           <Image
