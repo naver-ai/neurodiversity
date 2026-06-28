@@ -7,6 +7,7 @@ import {
   RecruitmentSection,
   RecruitmentApply,
   UnorderedList,
+  U,
   Keep,
 } from "@/app/_components/RecruitmentTemplate";
 
@@ -77,7 +78,7 @@ export default function SenecaRecruitmentPage() {
         {/* ── 연구 목적 ─────────────────────────────────────────── */}
         <RecruitmentSection tag="연구 목적">
           <p className="mt-4 text-[15px] leading-relaxed text-gray-700">
-            저희 네이버-미시건 대학교 공동연구진은 만 60세 이상 노년층의 일상 속 의사소통을 개인
+            저희 네이버-미시건 대학교 공동연구진은 <U><Keep>만 60세 이상</Keep></U> 노년층의 일상 속 의사소통을 개인
             맞춤형으로 돕는 대화형 인공지능 시스템을 연구하고 있습니다. 이 시스템은 노년층 본인에
             대해 추론하고 기억한 내용을 사용자가 직접 점검하고 수정할 수 있도록 설계됩니다. 본
             인터뷰에서는 전문가의 관점에서 이러한 시스템 설계와 인공지능 응답의 적절성에 대한 의견을
@@ -93,7 +94,7 @@ export default function SenecaRecruitmentPage() {
           <div className="mt-4 rounded-xl px-6 py-6 sm:px-8" style={{ backgroundColor: "#f3f3f3" }}>
             <UnorderedList
               items={[
-                <>노년층 대상 심리 상담, 코칭, 언어치료 전문가</>,
+                <>노년층(만 60세 이상) 대상 심리 상담, 코칭, 언어치료 전문가</>,
                 <>노년층의 의사소통 관련한 연구를 수행하거나 논문을 출판한 전문가</>,
                 <>노년층을 대상으로 인공지능 시스템을 설계 및 구현해 본 전문가</>,
               ]}
