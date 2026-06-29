@@ -9,6 +9,7 @@ import {
   RecruitmentHero,
   RecruitmentNote,
   RecruitmentSection,
+  RecruitmentBeat,
   RecruitmentApply,
   SectionTag,
   OrderedList,
@@ -86,6 +87,54 @@ export default function AutifactRecruitmentPage() {
 
         {/* ── 하단 안내 ──────────────────────────────────────── */}
         <RecruitmentNote color={C.mint} />
+
+        {/* ── 연구 배경 ───────────────────────────────────────── */}
+        <RecruitmentSection tag="연구 배경">
+          <div className="mt-5 space-y-5">
+            <RecruitmentBeat
+              image={{
+                src: "/assets/projects/autifact/autifact_background_cut_1.png",
+                alt: "교실에서 또래와 갈등 상황을 마주한 아이",
+                width: 1024,
+                height: 768,
+              }}
+            >
+              학교 등 새로운 환경에 들어선 자폐스펙트럼장애 아동 및 청소년은 또래/교사와의 여러{" "}
+              <U>사회적 갈등 상황</U>을 마주하며 어려움을 겪을 수 있습니다.
+            </RecruitmentBeat>
+
+            <RecruitmentBeat
+              image={{
+                src: "/assets/projects/autifact/autifact_background_cut_2.png",
+                alt: "어떤 말을 해야 할지 고민하는 아이",
+                width: 1024,
+                height: 768,
+              }}
+            >
+              이런 순간에는 상대의 생각과 감정을 헤아리고, 어떤 상황에서 어떤 말을 해야 할지 떠올리는
+              일이 쉽지 않습니다.
+            </RecruitmentBeat>
+
+            <RecruitmentBeat
+              image={{
+                src: "/assets/projects/autifact/autifact_background_cut_3.png",
+                alt: "AI 시스템을 함께 사용하는 아이와 양육자",
+                width: 1024,
+                height: 768,
+              }}
+            >
+              이에 저희 연구진은 이러한 사회적 상황을 <U>AI 친구와 함께 안전하게 연습</U>해 볼 수
+              있도록 돕는 태블릿 앱을 구상하였습니다.
+            </RecruitmentBeat>
+          </div>
+
+          <p className="mt-6 text-[15px] leading-relaxed text-gray-700">
+            본 연구는 이 앱이 자폐 아동 및 청소년의 <U>사회적 의사소통</U>에 미치는 영향을 과학적으로
+            검증하기 위해 진행됩니다. 참여 아동은 실제로 마주할 수 있는 사회적 상황을 시뮬레이션하며
+            의사소통을 연습해 볼 기회를 가질 수 있으며, 양육자께서는 새로운 AI 기술을 직접 경험하시는
+            한편 <b>자폐 아동 및 청소년을 위한 의사소통 지원 기술의 발전에 기여</b>하실 수 있습니다.
+          </p>
+        </RecruitmentSection>
 
         {/* ── 모집 대상 ───────────────────────────────────────── */}
         <RecruitmentSection tag="모집 대상">

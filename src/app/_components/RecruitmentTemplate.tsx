@@ -224,6 +224,29 @@ export function UnorderedList({ items }: { items: React.ReactNode[] }) {
   );
 }
 
+/* ── 일러스트 컷 + 설명 한 줄 (연구 배경 등 그림 설명용) ─────────── */
+
+export function RecruitmentBeat({
+  image,
+  children,
+}: {
+  image: { src: string; alt: string; width: number; height: number };
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex items-center gap-4 sm:gap-6">
+      <Image
+        src={assetPath(image.src)}
+        alt={image.alt}
+        width={image.width}
+        height={image.height}
+        className="h-auto w-[40%] md:max-w-48 shrink-0"
+      />
+      <p className="text-[15px] leading-relaxed text-gray-700">{children}</p>
+    </div>
+  );
+}
+
 /* ── 참가 신청 및 문의 (CTA 버튼 + QR) ───────────────────────────── */
 
 export function RecruitmentApply({
