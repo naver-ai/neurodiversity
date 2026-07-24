@@ -26,12 +26,41 @@ const CONTACT_EMAIL = "dl_hci@navercorp.com";
 // 강조색 (민트) — 뱃지 · CTA 버튼 · 강조 문구
 const ACCENT = "#28a156";
 
+const PAGE_TITLE = "연구 참여자 모집 | 중장년층 맞춤형 대화형 인공지능 자유 대화 체험 연구";
+const PAGE_DESCRIPTION =
+  "만 60세 이상 중장년층을 대상으로, 챗지피티 같은 대화형 인공지능 앱에서 건강·복지·인간관계를 주제로 자유 대화를 체험하고 인터뷰에 참여할 분을 모집합니다. (네이버-미시건 대학교 공동연구)";
+
+// 링크 미리보기(OG) 이미지 — 소셜/메신저 크롤러는 절대 URL만 불러올 수 있으므로
+// GitHub Pages 배포 origin + basePath 를 붙여 hero 일러스트를 그대로 사용합니다.
+const OG_IMAGE = `https://naver-ai.github.io${
+  process.env.NEXT_PUBLIC_BASE_PATH ?? ""
+}/assets/projects/seneca/oa_seneca_usage.png`;
+
 export const metadata: Metadata = {
-  title: "연구 참여자 모집 | 중장년층 맞춤형 대화형 인공지능 자유 대화 체험 연구",
-  description:
-    "만 60세 이상 중장년층을 대상으로, 챗지피티 같은 대화형 인공지능 앱에서 건강·복지·인간관계를 주제로 자유 대화를 체험하고 인터뷰에 참여할 분을 모집합니다. (네이버-미시건 대학교 공동연구)",
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   // 딥링크 공유용 페이지이므로 검색 노출은 막아 둡니다.
   robots: { index: false, follow: false },
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 832,
+        height: 468,
+        alt: "중장년층이 컴퓨터로 AI 도우미와 대화하는 모습 일러스트",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    images: [OG_IMAGE],
+  },
 };
 
 // 참여 안내 (기간 · 실험 내용 · 사례비 · 장소)
