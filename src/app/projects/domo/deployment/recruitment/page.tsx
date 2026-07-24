@@ -24,8 +24,14 @@ const FORM_URL = "https://forms.gle/dtHWBzXaQL9azodM9";
 const CONTACT_NAME = "차윤정";
 const CONTACT_EMAIL = "yoonjeong.cha@navercorp.com";
 
-// 강조색 (보라) — 플라이어의 섹션 강조색을 샘플링한 값. 뱃지 · CTA 버튼 · 안내 문구에 사용.
-const ACCENT = "#7E53F3";
+// 색상 토큰 — autifact 모집 페이지와 동일한 컬러 스킴을 따릅니다.
+// (mint: 뱃지·안내 문구 / orange: CTA 버튼 / box: 연한 회색 박스)
+const C = {
+  mint: "#28a156", // "연구 참여자 모집" 뱃지 · 안내 문구
+  orange: "#ef7a3e", // CTA 버튼
+  red: "#e23b2e", // 강조 안내 문구
+  box: "#f3f3f3", // 연한 회색 박스
+};
 
 const PAGE_TITLE = "연구 참여자 모집 | ADHD 아동 가족을 위한 AI 기반 일상 루틴 관리 시스템 연구";
 const PAGE_DESCRIPTION =
@@ -86,7 +92,7 @@ export default function DomoDeploymentRecruitmentPage() {
       <RecruitmentCard>
         <RecruitmentHeader
           badge="연구 참여자 모집"
-          badgeColor={ACCENT}
+          badgeColor={C.mint}
           brands={[
             {
               kind: "logo",
@@ -115,7 +121,7 @@ export default function DomoDeploymentRecruitmentPage() {
         />
 
         {/* ── 안내 문구 (네이버 비영리 학술연구 고지 — 플라이어 문구) ─── */}
-        <RecruitmentNote color={ACCENT}>
+        <RecruitmentNote color={C.mint}>
           *본 연구는 네이버의 비영리 학술조직에서 진행하는 연구로, 참가자로부터 얻은 지식은 네이버의
           서비스/제품개발이 아닌 학술적 기여를 위하여 활용됩니다.
         </RecruitmentNote>
@@ -124,7 +130,7 @@ export default function DomoDeploymentRecruitmentPage() {
         <RecruitmentSection tag="연구 소개">
           <div
             className="mt-4 rounded-xl px-6 py-5 sm:px-8"
-            style={{ backgroundColor: "#f3f3f3" }}
+            style={{ backgroundColor: C.box }}
           >
             <p className="text-[15px] font-bold leading-relaxed text-gray-800">
               아이가 해야 할 일을 자꾸 잊어버리거나, 매일 같은 목표를 반복해서 이야기하게 되시나요?
@@ -187,7 +193,7 @@ export default function DomoDeploymentRecruitmentPage() {
           <p className="mt-4 text-[15px] font-bold leading-relaxed text-gray-800">
             아래 조건을 만족하는 아동과 양육자를 함께 모집합니다.
           </p>
-          <div className="mt-4 rounded-xl px-6 py-6 sm:px-8" style={{ backgroundColor: "#f3f3f3" }}>
+          <div className="mt-4 rounded-xl px-6 py-6 sm:px-8" style={{ backgroundColor: C.box }}>
             <UnorderedList
               items={[
                 <>
@@ -242,7 +248,7 @@ export default function DomoDeploymentRecruitmentPage() {
                 주세요. 설문 응답 후 연구 조건에 적합한 경우 연구진이 개별적으로 연락드립니다.
               </>
             }
-            cta={{ label: "참가 신청하기", href: FORM_URL, color: ACCENT }}
+            cta={{ label: "참가 신청하기", href: FORM_URL, color: C.orange }}
             contact={
               <p>
                 <span className="font-bold text-gray-700">문의</span> 연구담당자 {CONTACT_NAME}{" "}
