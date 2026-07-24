@@ -260,7 +260,8 @@ export function RecruitmentApply({
   cta?: { label: string; href: string; color: string };
   /** CTA 아래에 들어갈 문의 정보 */
   contact?: React.ReactNode;
-  qrSrc: string;
+  /** QR 코드 이미지 경로. 생략하면 QR 블록을 표시하지 않습니다. */
+  qrSrc?: string;
   qrCaption?: string;
 }) {
   return (
@@ -284,18 +285,20 @@ export function RecruitmentApply({
         {contact ? <div className="mt-5 text-sm text-gray-500">{contact}</div> : null}
       </div>
 
-      <div className="shrink-0 self-center sm:self-start">
-        <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
-          <Image
-            src={assetPath(qrSrc)}
-            alt="참가 신청 설문 QR 코드"
-            width={132}
-            height={132}
-            className="h-32 w-32"
-          />
+      {qrSrc ? (
+        <div className="shrink-0 self-center sm:self-start">
+          <div className="rounded-xl border border-gray-100 bg-white p-3 shadow-sm">
+            <Image
+              src={assetPath(qrSrc)}
+              alt="참가 신청 설문 QR 코드"
+              width={132}
+              height={132}
+              className="h-32 w-32"
+            />
+          </div>
+          <p className="mt-2 text-center text-xs text-gray-400">{qrCaption}</p>
         </div>
-        <p className="mt-2 text-center text-xs text-gray-400">{qrCaption}</p>
-      </div>
+      ) : null}
     </div>
   );
 }
